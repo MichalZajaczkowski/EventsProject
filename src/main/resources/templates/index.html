@@ -13,9 +13,9 @@
 
 <body id="page-top">
 <!-- Navigation-->
-<nav th:fragment="copy" class="navbar navbar-expand-lg navbar-primary fixed-top" id="mainNav">
+<nav th:fragment="copy" class="navbar navbar-expand-lg navbar-brand fixed-top" id="mainNav">
     <div class="container-lg">
-        <a class="navbar-brand" href="/"><img src="../static/images/img/logos/navbar_logo.png" alt="..."/></a>
+        <a class="navbar-brand" href="/"><img src="../static/images/img/logos/navbar_logo.png" alt="KrakEvents - logotype"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -26,12 +26,13 @@
                 <li class="nav-item"><a class="nav-link" href="#page-top"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
                     <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
                 </svg> HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="/events">Wydarzenia</a></li>
+                <li class="nav-item"><a class="nav-link" href="/allevents">Wydarzenia</a></li>
                 <li class="nav-item"><a class="nav-link" href="#searchBar">Wyszukiwarka</a></li>
                 <li class="nav-item"><a class="nav-link" href="/favorites">Ulubione</a></li>
-                <li class="nav-item"><a class="nav-link" href="#team">Kontakt</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">O mnie</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">O mnie</a></li>
                 <li class="nav-item"><a class="nav-link" href="#login">Zaloguj się</a></li>
+                <li class="nav-item"><a class="nav-link" href="#register">Rejestracja</a></li>
                 <li class="nav-item"><a class="nav-link" href="#pl"><img src="images/poland.png" width="20" height="20" alt=""/></a></li>
                 <li class="nav-item"><a class="nav-link" href="#gb"><img src="images/united-kingdom.png" width="20" height="20" alt=""/></a></li>
             </ul>
@@ -110,6 +111,122 @@
 </section>
 
 
+<div class="mx-5 my-2 text-center">
+    <div class="py-3">
+        <div class="mx-auto">
+            <h1 class="fw-light" style="font-size: 25px; font-weight: bold">Najbliższe imprezy</h1>
+        </div>
+    </div>
+</div>
+
+
+<!-- album-->
+<div class="album py-1 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="mx-5 my-2 text-center">
+    <div class="py-3">
+        <div class="mx-auto mt-4">
+            <h1 class="fw-light" style="font-size: 25px; font-weight: bold">Ostatnio dodane wydarzenia</h1>
+        </div>
+    </div>
+</div>
+
+<div class="album py-1 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Zobacz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
 <hr class="ui-menu-divider">
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -133,27 +250,12 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-
-
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid architecto doloribus eligendi
-    esse ex
-    ipsa
-    maiores nulla numquam odit quia quod sequi sint vero vitae, voluptate voluptatibus? Aut, explicabo.
-</div>
-<div>Architecto asperiores cupiditate explicabo illo inventore minima natus provident reprehenderit ut
-    velit.
-    Aliquam
-    animi atque beatae blanditiis eaque hic impedit in inventore minima molestiae numquam quam quibusdam quo
-    reprehenderit, tempora?
-</div>
-<div>A accusamus accusantium aliquam aspernatur commodi consequuntur modi mollitia voluptatibus! Ab
-    blanditiis,
-    dignissimos dolor doloremque earum eum fuga hic iusto nemo nihil, perspiciatis provident quisquam
-    reprehenderit
-    sit
-    suscipit tenetur unde!
-</div>
-
+<!-- footer-->
+<footer class="footer mt-5 mb-1 bg-light">
+    <div class="container" style="justify-content: center">
+        <span class="footer">&copy 2021, <a href = "mailto: kontakt@xyz.pl" class="footer">kontakt@xyz.pl</a></span>
+    </div>
+</footer>
 
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
