@@ -12,4 +12,10 @@ public class MainController implements ControllerEntity{
     public String displayPage() {
         return "index";
     }
+
+    @GetMapping("/allevents")
+    public String allevents () {
+        return "allevents";
+    }
+
 }
