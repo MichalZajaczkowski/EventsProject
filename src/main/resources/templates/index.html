@@ -4,9 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>KrakEvents</title>
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" sizes="32x32" href="../static/images/favicon.ico">
-    <!-- CSS (Bootstrap)-->
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../static/css/styles.css" rel="stylesheet"/>
 </head>
@@ -32,8 +37,15 @@
                 <li class="nav-item"><a class="nav-link" href="#team">Kontakt</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">O mnie</a></li>
                 <li class="nav-item"><a class="nav-link" href="#login">Zaloguj się</a></li>
-                <li class="nav-item"><a class="nav-link" href="#pl"><img src="images/poland.png" width="20" height="20" alt=""/></a></li>
-                <li class="nav-item"><a class="nav-link" href="#gb"><img src="images/united-kingdom.png" width="20" height="20" alt=""/></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" th:text="${#strings.toUpperCase(#locale)}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Język
+                    </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item text-color-#ffc800" th:href="@{/(lang=pl)}"><img src="images/pl.png" width="20" height="20"> Polski</a></li>
+                        <li><a class="dropdown-item " th:href="@{/(lang=en)}"><img src="images/uk.png" width="20" height="20"> English</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
