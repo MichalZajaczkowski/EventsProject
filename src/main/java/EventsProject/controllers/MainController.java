@@ -18,10 +18,17 @@ public class MainController implements ControllerEntity{
     public String allevents () {
         return "allevents";
     }
- //TODO: przesunac do wlasciwego kontrolera!!!
+//TODO: przesunac do wlasciwego kontrolera!!!
     @GetMapping("/singleevent")
     public String singleevent () {
         return "singleevent";
     }
+//TODO: przesunac do wlasciwego kontrolera!!!
+
+    @GetMapping("/login")
+    public String login () {
+        return "login";
+    }
+
 
 }
