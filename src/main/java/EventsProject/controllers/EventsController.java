@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping
-public class MainController implements ControllerEntity{
+public class EventsController implements ControllerEntity{
 
-    @GetMapping("/")
+    @GetMapping("/events")
     public String displayPage() {
-        return "index";
+        return "events/index";
     }
 }

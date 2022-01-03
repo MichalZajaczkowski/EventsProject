@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping
-public class MainController implements ControllerEntity{
+public class FavoritesController implements ControllerEntity{
 
-    @GetMapping("/")
+    @GetMapping("favorites")
     public String displayPage() {
-        return "index";
+        return "favorites/index";
     }
 }
