@@ -1,6 +1,6 @@
 package EventsProject.domainData;
 
-public class NewEvent {
+public class EventNew {
 
     private Integer Id;
     private String name;
@@ -14,10 +14,10 @@ public class NewEvent {
     private boolean  member_pay_fee;
     private Group group;
 
-    public NewEvent() {
+    public EventNew() {
     }
 
-    public NewEvent(Integer id, String name, String status, String local_date, String local_time, boolean is_online_event, Urls link, String description, String visibility, boolean member_pay_fee, Group group) {
+    public EventNew(Integer id, String name, String status, String local_date, String local_time, boolean is_online_event, Urls link, String description, String visibility, boolean member_pay_fee, Group group) {
         Id = id;
         this.name = name;
         this.status = status;
