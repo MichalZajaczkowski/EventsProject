@@ -1,42 +1,64 @@
 package EventsProject.domainData;
 
-public class EventNew {
 
-    private Integer Id;
+import java.util.List;
+
+public class EventNew {
+    private Integer id;
+    private Place place;
+    private String endDate;
     private String name;
-    private String status;
-    private String local_date;
-    private String local_time;
-    private boolean is_online_event;
-    private Urls link;
-    private String description;
-    private String visibility;
-    private boolean  member_pay_fee;
-    private Group group;
+    private Urls urls;
+    private List<FileName> attachments;
+    private String descLong;
+    private Integer categoryId;
+    private String startDate;
+    private Organizer organizer;
+    private String active;
+    private String descShort;
+    private Tickets tickets;
+
+    public EventNew(Integer id, Place place, String endDate, String name, Urls urls, List<FileName> attachments, String descLong, Integer categoryId, String startDate, Organizer organizer, String active, String descShort, Tickets tickets) {
+        this.id = id;
+        this.place = place;
+        this.endDate = endDate;
+        this.name = name;
+        this.urls = urls;
+        this.attachments = attachments;
+        this.descLong = descLong;
+        this.categoryId = categoryId;
+        this.startDate = startDate;
+        this.organizer = organizer;
+        this.active = active;
+        this.descShort = descShort;
+        this.tickets = tickets;
+    }
 
     public EventNew() {
     }
 
-    public EventNew(Integer id, String name, String status, String local_date, String local_time, boolean is_online_event, Urls link, String description, String visibility, boolean member_pay_fee, Group group) {
-        Id = id;
-        this.name = name;
-        this.status = status;
-        this.local_date = local_date;
-        this.local_time = local_time;
-        this.is_online_event = is_online_event;
-        this.link = link;
-        this.description = description;
-        this.visibility = visibility;
-        this.member_pay_fee = member_pay_fee;
-        this.group = group;
-    }
-
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        this.id = id;
+    }
+
+    public Place getPlace() {
+        return place;
+    }
+
+    public void setPlace(Place place) {
+        this.place = place;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(String endDate) {
+        this.endDate = endDate;
     }
 
     public String getName() {
@@ -47,75 +69,85 @@ public class EventNew {
         this.name = name;
     }
 
-    public String getStatus() {
-        return status;
+    public Urls getUrls() {
+        return urls;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setUrls(Urls urls) {
+        this.urls = urls;
     }
 
-    public String getLocal_date() {
-        return local_date;
+    public List<FileName> getAttachments() {
+        return attachments;
+    }
+    public FileName getAttachment() {
+        if (attachments.isEmpty()) {
+            FileName fileName = new FileName("-");
+            attachments.add(fileName);
+        }
+        return attachments.get(0);
     }
 
-    public void setLocal_date(String local_date) {
-        this.local_date = local_date;
+    public void setAttachments(List<FileName> attachments) {
+        this.attachments = attachments;
     }
 
-    public String getLocal_time() {
-        return local_time;
+    public String getDescLong() {
+        return descLong;
     }
 
-    public void setLocal_time(String local_time) {
-        this.local_time = local_time;
+    public void setDescLong(String descLong) {
+        this.descLong = descLong;
     }
 
-    public boolean isIs_online_event() {
-        return is_online_event;
+    public Integer getCategoryId() {
+        return categoryId;
     }
 
-    public void setIs_online_event(boolean is_online_event) {
-        this.is_online_event = is_online_event;
+    public void setCategoryId(Integer categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public Urls getLink() {
-        return link;
+    public String getStartDate() {
+        return startDate;
     }
 
-    public void setLink(Urls link) {
-        this.link = link;
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
     }
 
-    public String getDescription() {
-        return description;
+    public Organizer getOrganizer() {
+        return organizer;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setOrganizer(Organizer organizer) {
+        this.organizer = organizer;
     }
 
-    public String getVisibility() {
-        return visibility;
+    public String getActive() {
+        return active;
     }
 
-    public void setVisibility(String visibility) {
-        this.visibility = visibility;
+    public void setActive(String active) {
+        this.active = active;
     }
 
-    public boolean isMember_pay_fee() {
-        return member_pay_fee;
+    public String getDescShort() {
+        return descShort;
     }
 
-    public void setMember_pay_fee(boolean member_pay_fee) {
-        this.member_pay_fee = member_pay_fee;
+    public void setDescShort(String descShort) {
+        this.descShort = descShort;
     }
 
-    public Group getGroup() {
-        return group;
+    public Tickets getTickets() {
+        return tickets;
     }
 
-    public void setGroup(Group group) {
-        this.group = group;
+    public void setTickets(Tickets tickets) {
+        this.tickets = tickets;
     }
+
+
+
 }

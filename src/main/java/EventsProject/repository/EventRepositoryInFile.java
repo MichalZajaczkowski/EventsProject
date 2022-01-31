@@ -32,5 +32,9 @@ public class EventRepositoryInFile {
             e.printStackTrace();
             System.out.println("Błąd odczytu pliku .json.");
         }
+
+    }
+    public List<EventNew> getEventsDB() {
+        return eventsDB;
     }
 }
