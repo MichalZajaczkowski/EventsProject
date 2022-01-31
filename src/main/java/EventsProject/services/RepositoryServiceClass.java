@@ -25,6 +25,7 @@ public class RepositoryServiceClass {
     }
 
     public EventSimple getSingleEventSimpleFromList(Integer pointer) {
+        System.out.println("list");
         return  createSingleEventSimple(eventRepositoryInFile.getEventsDB().get(pointer));
     }
 
@@ -51,8 +52,9 @@ public class RepositoryServiceClass {
         List<EventSimple> listOfEventSimple = new ArrayList<>();
 
         for (int i = 0; i < numberOfEventsOnThePage; i++) {
-            listOfEventSimple.add(getSingleEventSimpleById(i));
+            listOfEventSimple.add(getSingleEventSimpleFromList(i));
         }
+        System.out.println("Repos: " + listOfEventSimple.size());
         return  listOfEventSimple;
     }
 }

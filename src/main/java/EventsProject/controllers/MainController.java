@@ -10,6 +10,6 @@ public class MainController {
 
     @GetMapping("/")
     public String displayMainPackage() {
-        return "main";
+        return "index";
     }
 }
