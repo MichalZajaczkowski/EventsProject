@@ -13,14 +13,4 @@ public class MainController {
     public String displayMainPackage(Model model) {
         return "index";
     }
-
-    @GetMapping("/allevents")
-    public String allevents() {
-        return "allevents";
-    }
-
-    @GetMapping("/singleevent")
-    public String singleevent() {
-        return "singleevent";
-    }
 }
