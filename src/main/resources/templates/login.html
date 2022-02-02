@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>KrakEvents - Logowanie</title>
+  <title>EventsApps - Logowanie</title>
 
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" sizes="32x32" href="images/favicon.ico">
@@ -25,23 +25,23 @@
   <div class="form-signin">
     <form>
       <img class="mb-4" src="images/img/logos/logo.png" alt="" width="150" height="145">
-      <h4 class="mb-3 fw-normal text-warning">Witamy w KrakEvents!</h4>
+      <h4 class="mb-3 fw-normal text-warning" th:text="#{login.greeting}"></h4>
 
       <div class="form-floating text-muted">
         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Email</label>
+        <label for="floatingInput" th:text="#{login.email}"></label>
       </div>
       <div class="form-floating text-muted">
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Hasło</label>
+        <label for="floatingPassword" th:text="#{login.password}"></label>
       </div>
 
       <div class="checkbox mb-3 text-light ">
         <label>
-          <input type="checkbox" value="remember-me"> Zapamiętaj mnie
+          <input type="checkbox" value="remember-me" th:text="#{login.checkmark}">
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary text-dark " type="submit">Zaloguj się</button>
+      <button class="w-100 btn btn-lg btn-primary text-dark " type="submit" th:text="#{login.button}"></button>
     </form>
   </div>
   <!-- footer-->
