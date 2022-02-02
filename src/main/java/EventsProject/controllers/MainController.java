@@ -23,9 +23,4 @@ public class MainController {
     public String singleevent() {
         return "singleevent";
     }
-    @GetMapping("/login")
-    public String login() {
-        return "login";
-    }
-
 }
