@@ -1,15 +1,16 @@
 package EventsProject.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping
-public class FavoritesController implements ControllerEntity{
+public class MainController {
 
-    @GetMapping("favorites")
-    public String displayPage() {
-        return "favorites/index";
+    @GetMapping("/")
+    public String displayMainPackage(Model model) {
+        return "index";
     }
 }

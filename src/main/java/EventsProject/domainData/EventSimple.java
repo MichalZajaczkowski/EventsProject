@@ -14,8 +14,7 @@ public class EventSimple {
     private String eventSimpleWebPageAddress;
     private String eventSimpleCity;
 
-    public EventSimple(Integer eventSimpleId, String eventSimpleName, String eventSimpleDescription, String eventSimpleDate, String eventSimpleStartTime, String eventSimpleEndTime, String eventSimplePlace, Double eventSimpleTicketPrice, String eventSimpleWebPageAddress, String eventSimpleCity) {
-
+    public EventSimple(Integer eventSimpleId, String eventSimpleName, String eventSimpleDescription, String eventSimpleDate, String eventSimpleStartTime, String eventSimpleEndTime, String eventSimplePlace, Double eventSimpleTicketPrice, String eventSimpleWebPageAddress) {
         this.eventSimpleId = eventSimpleId;
         this.eventSimpleName = eventSimpleName;
         this.eventSimpleDescription = eventSimpleDescription;
@@ -25,7 +24,7 @@ public class EventSimple {
         this.eventSimplePlace = eventSimplePlace;
         this.eventSimpleTicketPrice = eventSimpleTicketPrice;
         this.eventSimpleWebPageAddress = eventSimpleWebPageAddress;
-        this.eventSimpleCity = "Krakow";
+        this.eventSimpleCity = "Gdańsk";
     }
 
     public EventSimple() {
@@ -47,6 +46,10 @@ public class EventSimple {
 
     public void setEventSimpleId(Integer eventSimpleId) {
         this.eventSimpleId = eventSimpleId;
+    }
+
+    public void setEventSimpleCity(String eventSimpleCity) {
+        this.eventSimpleCity = eventSimpleCity;
     }
 
     public String getEventSimpleName() {
@@ -117,8 +120,8 @@ public class EventSimple {
         return eventSimpleCity;
     }
 
-    public void setEventSimpleCity(String eventSimpleCity) {
-        this.eventSimpleCity = eventSimpleCity;
+    public void setEventSimpleCity() {
+        this.eventSimpleCity = "Gdańsk";
     }
 
     @Override
